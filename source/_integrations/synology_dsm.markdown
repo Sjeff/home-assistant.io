@@ -86,6 +86,10 @@ Due to the nature of the Synology DSM API, it is required to grant the user admi
 
 When creating the user, it is possible to deny access to all locations and applications. By doing this, the user will not be able to login to the web interface or view any of the files on the Synology NAS. It is still able to read the utilization and storage information using the API.
 
+<div class='note'>
+If you want to use the switch to enable/disable Home mode you need to allow the Surveillance Station application to the user.
+<\div>
+
 ### If you utilize 2-Step Verification or Two Factor Authentication (2FA) with your Synology NAS
 
 If you have the "Enforce 2-step verification for the following users" option checked under **Control Panel > User > Advanced > 2-Step Verification**, you'll need to configure the 2-step verification/one-time password (OTP) for the user you just created before the credentials for this user will work with Home Assistant. 
